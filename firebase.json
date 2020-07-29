@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "../cats/dist/cats",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

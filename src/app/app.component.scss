@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;600&display=swap");
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+#animal-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 2em;
+}
+
+.reset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.winner {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.sizing {
+  object-fit: cover;
+  width: 400px;
+  height: 400px;
+  cursor: pointer;
+}
+
+.votes {
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  font-size: 2em;
+  margin-top: 0.2em;
+}
+
+.btn {
+  padding: 0.5em 3em;
+  border: 0.16em solid gray;
+  margin: 1em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Dosis", sans-serif;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  transition: all 0.15s;
+}
+
+a.btn:hover {
+  color: #dddddd;
+  border-color: #dddddd;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+a.btn:active {
+  color: #bbbbbb;
+  border-color: #bbbbbb;
+}
+
+.loader {
+  position: absolute;
+  margin: 0 auto;
+  border: 5px solid #f3f3f396;
+  border-top: 5px solid #2294e08a; /* Blue */
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media all and (max-width: 30em) {
+   a.button2 {
+    display: block;
+    margin: 0.4em auto;
+  }
+}
+
+@media (min-width: 300px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sizing {
+    object-fit: cover;
+    width: 220px;
+    height: 220px;
+    cursor: pointer;
+  }
+
+  #animal-section {
+    margin: 0;
+  }
+
+  .votes {
+    font-size: 1.5em;
+  }
+
+  .btn {
+    font-size: .8em;
+  }
+
+  .winner {
+    margin:.5em;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sizing {
+    object-fit: cover;
+    width: 280px;
+    height: 280px;
+    cursor: pointer;
+  }
+
+  #animal-section {
+    margin: .5em;
+  }
+
+  .votes {
+    font-size: 1.5em;
+  }
+
+  .btn {
+    font-size: .8em;
+  }
+
+  .winner {
+    margin:.5em;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .sizing {
+    object-fit: cover;
+    width: 290px;
+    height: 290px;
+    cursor: pointer;
+  }
+
+  #animal-section {
+    margin: 0.5em;
+  }
+}
+
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .sizing {
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+  }
+
+  #animal-section {
+    margin: 1em;
+  }
+
+  .btn {
+    font-size: .8em;
+  }
+
+  .votes {
+    font-size: 2em;
+    margin-top: 1em;
+  }
+  
+}
+
+@media (min-width: 1500px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .sizing {
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+  }
+
+  #animal-section {
+    margin: 2em;
+  }
+
+  .btn {
+    font-size: 1em;
+  }
+
+  .votes {
+    font-size: 2em;
+    margin-top: 1em;
+  }
+}
+
+@media (min-width: 1800px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .sizing {
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+  }
+
+  #animal-section {
+    margin: 2em;
+  }
+
+  .btn {
+    font-size: 1em;
+  }
+
+  .votes {
+    font-size: 2em;
+    margin-top: 1em;
+  }
+}

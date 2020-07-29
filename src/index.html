@@ -1,13 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Cats</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cat or Dog?</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/eb4a3ae5e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAfcxOy0K9DpEh3BF4ojEI4czYbp239wFU",
+        authDomain: "cat-dog-challenge.firebaseapp.com",
+        databaseURL: "https://cat-dog-challenge.firebaseio.com",
+        projectId: "cat-dog-challenge",
+        storageBucket: "cat-dog-challenge.appspot.com",
+        messagingSenderId: "1010230317761",
+        appId: "1:1010230317761:web:43441ebf1491dc9c4cfa40",
+        measurementId: "G-VH1ZX03F1Q",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  </head>
+  <body>
+    <header class="title">
+      <h1>Which one is the cutest? <i class="fas fa-paw"></i></h1>
+    </header>
+    <div id="center-content">
+      <app-root></app-root>
+    </div>
+  </body>
 </html>
